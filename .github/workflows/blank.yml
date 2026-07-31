@@ -3,7 +3,7 @@ on: push
 jobs: 
   action-demo:
     runs-on: ubuntu-latest
-    steps:
+     steps:
      - name: checkout the code
        uses: actions/checkout@v4
       -name: print index.html file
