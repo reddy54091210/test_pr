@@ -1,15 +1,11 @@
-name: hello world
-on:
-  push:
-   branches:
-    -main
-  pull_request:
-   branches:
-    - main
-
-jobs:
-  build:
+name: Github action demo
+on: push
+jobs: 
+ action-demo:
     runs-on: ubuntu-latest
     steps:
-     - name: Build Step
-       run: echo "demo build"
+     - name: checkout the code
+       uses: actions/checkout@v4
+      -name: print index.html file
+       run: cat index.html
+       
