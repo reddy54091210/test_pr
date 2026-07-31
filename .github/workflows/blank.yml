@@ -1,0 +1,8 @@
+name: hello world
+on: workflow_dispatch
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+     - name: Build Step
+       run: echo "demo build"
