@@ -1,7 +1,7 @@
 name: Github action demo
 on: push
 jobs: 
- action-demo:
+  action-demo:
     runs-on: ubuntu-latest
     steps:
      - name: checkout the code
